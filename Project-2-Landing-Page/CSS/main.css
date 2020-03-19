@@ -1,0 +1,210 @@
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css');
+@import url('https://fonts.googleapis.com/css?family=Josefin+Sans:100|Merriweather|Montserrat:900i&display=swap');
+
+/* Media Query For Computer */
+@media (min-width: 1401px) {
+  .link {
+    margin-left: 7em;
+  }
+
+  .topnav #about a {
+    float: right;
+    margin-left: auto;
+    margin-right: 20px;
+  }
+
+  img.item-img {
+    width: 550px;
+    height: auto;
+    margin-top: 100px;
+  }
+
+  .ul-info, .ol-info {
+    font-size: 1.4em;
+    width: 700px;
+  }
+
+  h2 {
+    display: inline-block;
+    font-size: 24px;
+    padding: 0;
+    margin-right: 5px;
+  }
+
+  h3 {
+    font-size: 2em;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 900;
+  }
+
+  .topnav #about {
+    float: right;
+  }
+
+  .about {
+    width: 60%;
+    margin-left: 10em;
+    margin-top: 7em;
+  }
+
+  footer {
+    padding-top: 5em;
+  }
+}
+
+/* Media Query for Tablet */
+@media (min-width: 699px) and (max-width: 1400px) {
+  .topnav #about {
+    float: right;
+    margin-left: auto;
+  }
+
+  img.item-img {
+    width: 300px;
+    height: auto;
+    margin-top: 100px;
+  }
+
+  .ul-info, .ol-info {
+    font-size: 1.4em;
+    width: 500px;
+  }
+
+  h2 {
+    display: inline-block;
+    font-size: 24px;
+    padding: 0;
+    margin-right: 5px;
+  }
+
+  h3 {
+    font-size: 1.5em;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 900;
+  }
+
+  .topnav #about {
+    float: right;
+  }
+}
+
+/* General CSS */
+body {
+  background-color: #787276;
+  padding-top: 100px;
+}
+
+.container {
+  background-color: white;
+  font-weight: bold;
+}
+
+.logo {
+  margin: 0;
+  padding: 0;
+  display: inline-block;
+  width: auto;
+  height: 200px;
+}
+
+.heading {
+  float: right;
+  font-size: 2em;
+  font-style: italic;
+  margin-top: 150px;
+  color: white;
+}
+
+/* CSS for the NavBar */
+.topnav {
+  background-color: black;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  display: block;
+  overflow: hidden;
+  transition: top 0.3s;
+}
+
+.topnav a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a:hover {
+  background-color: rgb(0, 128, 255);
+  cursor: pointer;
+}
+
+.topnav a.active {
+  background-color: silver;
+  color: white;
+}
+
+.topnav .icon {
+  display: none;
+}
+
+@media screen and (max-width: 700px) {
+  .topnav a:not(:first-child) {
+    display: none;
+  }
+
+  .topnav a.icon {
+    float: right;
+    display: block;
+    font-size: 3em;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .topnav.responsive {
+    position: fixed;
+    ;
+  }
+
+  .topnav.responsive .icon {
+    position: fixed;
+    right: 0;
+    top: 0;
+  }
+
+  .topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+
+  img.item-img {
+    width: 430px;
+  }
+}
+
+.topnav .fa-home {
+  font-size: 4em;
+}
+
+/* CSS for Content */
+footer {
+  text-align: center;
+}
+
+h4 {
+  font-size: 2.5em;
+  font-family: "Josefin sans", sans-serif;
+  font-style: italic;
+}
+
+em {
+  font-weight: 400;
+}
+
+.about {
+  text-align: center;
+  font-size: 1.5em;
+}

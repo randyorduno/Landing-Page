@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>DME-4-U</title>
+  <link rel="stylesheet" href="CSS/layout.css" type="text/css">
+  <link rel="stylesheet" href="CSS/main.css" type="text/css">
+</head>
+
+<body>
+  <!-- Heading -->
+  <img id="main" class="logo" src="Images/Logo.png">
+  <div class="heading">Medical Equipment For All!</div>
+  <!-- Nav Bar -->
+  <nav class="topnav" id="myTopnav">
+    <a class="active" onclick="homeFunction()" id="home"><i class="fa fa-home"></i></a>
+    <a class="link" id="section1" onclick="respFunction()">
+      <h2>Respitory</h2>
+    </a>
+    <a class="link" id="section2" onclick="bedFunction()">
+      <h2>Bed</h2>
+    </a>
+    <a class="link" id="section3" onclick="miscFunction()">
+      <h2>Miscellanous</h2>
+    </a>
+    <a class="" onclick="aboutFunction()" id="about">
+      <h2>About</h2>
+    </a>
+    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+    <i class="fa fa-bars"></i>
+  </a>
+  </nav>
+  <!-- Main Paige -->
+  <div class="container">
+    <div id="resp" class="oxygen-machine">
+      <section class="item-info-1">
+        <img class="item-img" src="Images/Everflo.jpg" alt="Everflo">
+      </section>
+      <section class="item-info-2">
+        <h3>Oxygen Machine/Oxygen Concentatrator</h3> <br><br>
+        <h4>What does it do?</h3>
+          <ul class="ul-info">
+            <li>It provides oxygen to patients</li>
+            <li>It maintains patient's oxygen levels to normal</li>
+            <li>It helps them recieve clean oxygen</li>
+          </ul>
+      </section>
+      <section class="item-info-3">
+        <h4>How to use?</h2>
+          <ol class="ol-info">
+            <li>Turn machine on</li>
+            <li>Wait for yellow light to turn green</li>
+            <li>Connect nasal cannula into the output area</li>
+            <li>Place nasal cannula onto patient</li>
+            <li>Make sure machine is at least 1 ft away from any object</li>
+          </ol>
+      </section>
+    </div>
+    <div class="etank" id="e-tank">
+      <section class="item-info-1">
+        <img class="item-img" src="Images/E-Tank.jpg" alt="E-Tank">
+      </section>
+      <section class="item-info-2">
+      <h3>E-Tank/Oxygen Tank</h3> <br><br>
+      <h4>What does it do?</h3>
+        <ul class="ul-info">
+          <li>It provides oxygen to patients</li>
+          <li>It maintains patient's oxygen levels to normal</li>
+          <li>It helps them recieve clean oxygen</li>
+          <li>It is portable, patients can use it when traveling</li>
+          <li>It can be used when there are blackouts or O2 Concentrator stops working</li>
+        </ul>
+        </section>
+        <section class="item-info-3">
+          <h4>How to use?</h2>
+            <ol class="ol-info">
+              <li>Make sure regulator is placed correctly</li>
+              <li>Open valve with given key or toggle on E-Tank</li>
+              <li>Make sure regulatoris set to proper O2 flow.</li>
+              <li>Place nasal cannula onto patient</li>
+              <li>Wait until gauge reaches red to switch to another E-Tank</li>
+            </ol>
+        </section>
+    </div>
+    <div class="asp" id="aspirator">
+      <section class="item-info-1">
+        <img class="item-img" src="Images/Aspirator.jpg" alt="Aspirator">
+      </section>
+      <section class="item-info-2">
+      <h3>Aspirator/Suction Machine</h3> <br><br>
+      <h4>What does it do?</h3>
+        <ul class="ul-info">
+          <li>It helps care giver remove any fluids or solids to prevent patient from aspirating</li>
+          <li>It maintains patient's mouth clean</li>
+          <li>It can also be paired with a GOMCO machine</li>
+        </ul>
+        </section>
+        <section class="item-info-3">
+          <h4>How to use?</h2>
+            <ol class="ol-info">
+              <li>Turn machine on</li>
+              <li>Machine should beging to vibrate</li>
+              <li>6ft tubing should be connected to canister</li>
+              <li>6ft tubing should also be connected to yankuer on the other end</li>
+              <li>Use finger to cover the small opening on the yankuer, this is to control when to suction</li>
+              <li>Use 'U' movements to suction out all fluids/solids</li>
+              <li>Empty and clean canister after every use</li>
+            </ol>
+        </section>
+    </div>
+    <div class="neb" id="nebulizer">
+      <section class="item-info-1">
+        <img class="item-img" src="Images/Nebulizer.jpg" alt="Nebulizer">
+      </section>
+      <section class="item-info-2">
+      <h3>Hand Held Nebulizer/Nebulizer</h3> <br><br>
+      <h4>What does it do?</h3>
+        <ul class="ul-info">
+          <li>It provides medice that is inhaled</li>
+          <li>It helps the patients whose lungs which are congested for different reason</li>
+          <li>It helps them breathe more confortably</li>
+        </ul>
+        </section>
+        <section class="item-info-3">
+          <h4>How to use?</h2>
+            <ol class="ol-info">
+              <li>Turn air compressor on</li>
+              <li>Make sure medicine is inside the tubing</li>
+              <li>Make sure tubing is snugged in all the way</li>
+              <li>Medicine will begin to nebulize, patient needs to breathe normal</li>
+              <li>Medicine will take 30 to 45 min to fully nebulize</li>
+              <li>Once treatment is done rinse tubing with warm water and hang to air dry</li>
+            </ol>
+        </section>
+    </div>
+    <div class="reg" id="regulator">
+      <section class="item-info-1">
+        <img class="item-img" src="Images/Regulator.jpg" alt="Regulator">
+      </section>
+      <section class="item-info-2">
+      <h3>Regulator</h3> <br><br>
+      <h4>What does it do?</h3>
+        <ul class="ul-info">
+          <li>It helps control the amount of oxygen that gets output</li>
+          <li>It lets you measure amount of oxygen left in the tank</li>
+          <li>It helps to make it easier to switch from one tank to the other</li>
+        </ul>
+        </section>
+        <section class="item-info-3">
+          <h4>How to use?</h2>
+            <ol class="ol-info">
+              <li>Make sure regulator is placed correctly onto tank</li>
+              <li>If gauge reads 2000 psi, it means tank is full. If it reads 1000psi or less, use different tank</li>
+              <li>Connect nasal cannula into the output area</li>
+              <li>Place nasal cannula onto patient</li>
+              <li>Turn knob, it should start at 0 and increase in increments of .5 LPM (Liters per Minute)</li>
+              <li>Once correct LPM is set, monitor the gauge to see when it reaches 0 psi to switch to a different tank </li>
+            </ol>
+        </section>
+    </div>
+    <div id="hospbed" class="bed">
+      <section class="item-info-1">
+        <img class="item-img" src="Images/Hospital-Bed.jpg" alt="Hospital Bed">
+      </section>
+      <section class="item-info-2">
+      <h3>FEB/Full Electrical Bed</h3> <br><br>
+      <h4>What does it do?</h3>
+        <ul class="ul-info">
+          <li>It provides a comfort sleep to patients</li>
+          <li>It makes it practical for caregivers to adjust height when needed</li>
+          <li>It allows bed-written patients to sit up when needed, or raise legs when also needed</li>
+        </ul>
+        </section>
+        <section class="item-info-3">
+          <h4>How to use?</h2>
+            <ol class="ol-info">
+              <li>Make sure bed is plugged into socket</li>
+              <li>Control Box should have a green indicator on to know bed is plugged in</li>
+              <li>Use controls to adjust bed</li>
+              <li>Top two buttons adjust the top half to allow the patient to sit or lower to be able to lay down</li>
+              <li>Middle two buttons allow for entire bed to go up or down</li>
+              <li>Bottom two buttons alloow bottom half (legs) to be raised or lowered</li>
+            </ol>
+        </section>
+    </div>
+    <div class="half" id="half-rails">
+      <section class="item-info-1">
+        <img class="item-img" src="Images/Half-Rails.jpg" alt="Half Rails">
+      </section>
+      <section class="item-info-2">
+      <h3>Half Rails/HSR</h3> <br><br>
+      <h4>What does it do?</h3>
+        <ul class="ul-info">
+          <li>It prevents patients from falling off the bed</li>
+        </ul>
+        </section>
+        <section class="item-info-3">
+          <h4>How to use?</h2>
+            <ol class="ol-info">
+              <li>Turn knob clockwise to lock onto bed. Counter-clockwise to uninstall</li>
+              <li>Make sure half rails are installed after the 3rd spring from the head seaction</li>
+              <li>Use the bar underneath the knob to adjust the height of the rail</li>
+              <li>There are only 2 positions on the rail</li>
+              <li>Top position when patient is on the bed. Bottom position when patients needs to get off the bed</li>
+            </ol>
+        </section>
+    </div>
+    <div class="full" id="full-rails">
+      <section class="item-info-1">
+        <img class="item-img" src="Images/Full-Rails.jpg" alt="Full Rails">
+      </section>
+      <section class="item-info-2">
+      <h3>Full Ralis/FSR</h3> <br><br>
+      <h4>What does it do?</h3>
+        <ul class="ul-info">
+          <li>It prevents patients from falling off the bed</li>
+        </ul>
+        </section>
+        <section class="item-info-3">
+          <h4>How to use?</h2>
+            <ol class="ol-info">
+              <li>Side bars need to be installed after the 3rd spring on head section and before 3rd spring on foot section</li>
+              <li>Full rails will extend to slide in the slots of each sidebar</li>
+              <li>Once pins are locked on side bar the rails are ready</li>
+              <li>Top position when patient is on the bed. Bottom position when patients needs to get off the bed</li>
+              <li>Pull pins on each side to unlock and adjust height</li>
+            </ol>
+        </section>
+    </div>
+    <div id="misc" class="obt">
+      <section class="item-info-1">
+        <img class="item-img" src="Images/Obt.jpg" alt="OBT">
+      </section>
+      <section class="item-info-2">
+      <h3>Over Bed Table/OBT</h3> <br><br>
+      <h4>What does it do?</h3>
+        <ul class="ul-info">
+          <li>It allows bed-written patients to eat comfortably</li>
+          <li>It helps caregivers to place other medical equipment closer to patient</li>
+        </ul>
+        </section>
+        <section class="item-info-3">
+          <h4>How to use?</h2>
+            <ol class="ol-info">
+              <li>Table has two brakes to prevent from moving</li>
+              <li>Handle underneath table is to adjust height</li>
+              <li>Clamp on handle to push table into lower height</li>
+              <li>Lift table to make it taller</li>
+            </ol>
+        </section>
+    </div>
+    <div class="ecart" id="e-cart">
+      <section class="item-info-1">
+        <img class="item-img" src="Images/E-Cart.jpg" alt="E Cart">
+      </section>
+      <section class="item-info-2">
+      <h3>E-Cart/ETC</h3> <br><br>
+      <h4>What does it do?</h3>
+        <ul class="ul-info">
+          <li>It provides a place to hold E-Tank</li>
+          <li>It helps moving tank a lot easier</li>
+        </ul>
+        </section>
+        <section class="item-info-3">
+          <h4>How to use?</h2>
+            <ol class="ol-info">
+              <li>Small knob on the side is to help tighten or loosen the pin that prevents tank from sliding out </li>
+              <li>Hook is there to hang extra tubing</li>
+            </ol>
+        </section>
+    </div>
+    <div class="nascan" id="nasal-cannula">
+      <section class="item-info-1">
+        <img class="item-img" src="Images/Nasal-Cannula.jpg" alt="Nasal Cannula">
+      </section>
+      <section class="item-info-2">
+      <h3>Nasal Cannula/NC</h3> <br><br>
+      <h4>What does it do?</h3>
+        <ul class="ul-info">
+          <li>It helps direct oxygen to patients nasal</li>
+        </ul>
+        </section>
+        <section class="item-info-3">
+          <h4>How to use?</h2>
+            <ol class="ol-info">
+              <li>Make sure one end is connected to oxygen output needle</li>
+              <li>Make sure curved section of the cannula wraps around patients ears</li>
+              <li>Prongs need to be pointing upward not downward</li>
+              <li>Cannula is adjustable to have a 'tighter' fit</li>
+              <li>Prongs can be placed inside a cup of water to test if they are working properly</li>
+              <li>Bubbles means oxygen is flowing through. No bubbles means it's time to change to a new nasal cannula</li>
+            </ol>
+        </section>
+    </div>
+    <div class="yank" id="yankuer">
+      <section class="item-info-1">
+        <img class="item-img" src="Images/Yankuer.jpg" alt="Yankuer">
+      </section>
+      <section class="item-info-2">
+      <h3>Yankuer</h3> <br><br>
+      <h4>What does it do?</h3>
+        <ul class="ul-info">
+          <li>Paired with the aspirator, helps suction out fluids</li>
+          <li>Small opening helps regulate when to suction </li>
+          <li>When covering the opening, there's suction, otherwise the tip won't suction at all</li>
+        </ul>
+        </section>
+        <section class="item-info-3">
+          <h4>How to use?</h2>
+            <ol class="ol-info">
+              <li>Bottom of the yankuer is connected to 6ft tubing</li>
+              <li>Tip is used to suction</li>
+              <li>Vinegar mixed with water can be used to disinfect yankeur</li>
+              <li>Clean after every use</li>
+            </ol>
+        </section>
+    </div>
+    <div class="nebmask" id="neb-mask">
+      <section class="item-info-1">
+        <img src="Images/Neb-Mask.jpg" alt="Neb Mask" class="item-img">
+      </section>
+      <section class="item-info-2">
+      <h3>Nebulizer Mask/ Adult Neb Mask</h3> <br><br>
+      <h4>What does it do?</h3>
+        <ul class="ul-info">
+          <li>It provides patients the comfort of not having to hold onto tubing during treatment</li>
+          <li>It allows caregivers to give the treatment while patient sleeps</li>
+          <li>It allows patients to inhale treatment through the nose</li>
+        </ul>
+        </section>
+        <section class="item-info-3">
+          <h4>How to use?</h2>
+            <ol class="ol-info">
+              <li>Top half of the nebulizer is connected to the mask</li>
+              <li>Bottom half is connected to 7 ft tubing</li>
+              <li>After every treatment, rinse with warm water</li>
+              <li><em><mark>IMPORTANT</mark></em>: DO NOT BREAK GREEN PLASTIC THAT IS WHAT NEBULIZES TREATMENT. IF BROKEN OR LOST, TREATMENT WILL NOT BE NEBULIZED</li>
+            </ol>
+        </section>
+    </div>
+    <div id="abt" class="about">
+      <h3>About Us</h2>
+      <h4>Here's a little something about us</h3>
+      <p>We strive to make every person feel at ease when it comes to medical equipment. We know it is not common to have to deal with a loved one who is very sick and this may be your first time experiencing this chapter in life. Don't worry at DME-4-U we strive to help you in every step of the way and to help you with all your medical needs. We strive to provide our clients with top-notch equipment and we double check... Yes... Even triple check to make sure that every equipment functions 100% and it is up to the highest standards. Even if its at 99% ready, we will not send it to any client until we know it is 1000%. So please give us a chance, we won't let you down.</p>
+    </div>
+    <footer class="footer"><p>Posted by: Randy Orduno &copy; 2020 DME-4-U</p></footer>
+
+  </div>
+  <script src="Javascript/app.js" type=" text/javascript">
+  </script>
+</body>
+
+</html>
